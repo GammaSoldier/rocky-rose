@@ -1,0 +1,88 @@
+
+
+<!-- Honeypot for spammers -->
+
+<div id="guestbook-form" style="display: none;">
+<form method="post" action="<%%GBSITE%%>" name="REPLY">
+<p>
+Name <input type="text" size="40" maxlength="40" name="UserName" value=""><br>
+E-Mail <input type="text" size="40" maxlength="40" name="EMail" value=""><br>
+Homepage <input type="text" size="40" maxlength="40" name="Homepage" value=""><br>
+<textarea cols="60" rows="5" name="Post" class="textinput"></textarea><br>
+<input type="submit" name="Submit" value="Add">
+</p>
+</form>
+</div>
+
+<table class="Content">
+	<tr>
+		<td class="ContentLeft" valign="top">
+			<img src="./Grafik/MicStamp.png" alt="Joe">
+		</td>
+
+		<td  class="ContentRight" valign="top">
+		
+			<h2>G&Auml;STEBUCH</h2>
+
+<!-- intro -->
+			<%%INTRO%%>
+		
+<!-- form -->			
+			<form method="post" action="<%%GBSITE%%>">
+			<table>
+				<tr>
+					<td align="right">	
+						Name:
+					</td>
+					<td align="left">
+						<input type=hidden name="icq" value="">
+						<input type=text name="soheissisch" value="<%%NAME%%>" style="width: 400px;">
+					</td>
+				</tr>
+				<tr valign="top">
+					<td align="right">
+						Homepage:
+					</td>
+					<td align="left">
+						<input type=text name="heimseit" value="<%%SITE%%>" style="width: 400px;">
+					</td>
+				</tr>
+				<tr valign="top">
+					<td align="right">
+						Kommentar:
+					</td>
+					<td align="left">
+						<textarea name="ischsachsja" rows="5" style="width: 400px;" cols="10"><%%TEXT%%></textarea>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2" align="center">
+						<input type="submit" name="submit" value="Absenden!">
+					</td>
+				</tr>
+			</table></form>
+		
+<!-- list -->		
+			<table>
+				<tr valign="top">
+					<td>
+						<br>
+						<br>
+                        <p class="Center" >
+                            <img src="Grafik/SeperatorSmallWhite.png" ALT="___________">
+                        </p>
+                        <table width="400px">
+                            <%%ENTRIES%%>
+                        </table>
+					</td>
+				</tr>
+			</table>
+
+			
+		</td>
+	</tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+

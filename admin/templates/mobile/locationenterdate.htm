@@ -1,0 +1,80 @@
+<table class="listing" align="center">
+    <tr>
+        <th colspan="2">
+            New Date:
+        </th>
+    </tr>
+    <tr >
+        <td colspan="2">
+            Enter day and time for a gig in:<br/>
+            <br/>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td width="35%" class="highlight">
+            <br/><%%NAME%%><br/>
+            <%%ADDRESS%%><br/>
+            <br/>
+        </td>
+        <td width="65%">
+            <form method="post" action="<%%SITE%%>?action=newdate">
+            
+            <table>
+                <tr>
+                    <td>
+                        Day: 
+                    </td>
+                    <td>
+                        <select size="1" name="day" style="width: 40px; text-align: right;">
+                        <%%DAYSELECTOR%%>
+                        </select>
+                    </td>
+                    <td>
+                        Month:
+                    </td>
+                    <td>
+                        <select size="1" name="month" style="width: 40px; text-align: right;">
+                        <%%MONTHSELECTOR%%>
+                        </select>
+                    </td>
+                    <td>
+                        Year: 
+                    </td>
+                    <td>
+                        <select size="1" name="year" style="width: 60px; text-align: right;">
+                        <%%YEARSELECTOR%%>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hour: 
+                    </td>
+                    <td>
+                        <input type="text" name="hour" value="20" style="width: 40px;" />
+                    </td>
+                    <td>
+                        Minute:
+                    </td>
+                    <td>
+                        <input type="text" name="minute" value="00" style="width: 40px;" />
+                        <input type="hidden" name="location" value="<%%LOCATION%%>"/>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="checkbox" name="newsletter" value="newsletter" checked> Newsletter<br/>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <br/>
+            <input type="submit" name="btnsend" value="Submit" style="height: 20px; width: 100px"/>
+            </form>
+        </td>
+    </tr>
+</table>	

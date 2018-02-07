@@ -1,0 +1,14 @@
+ 
+<div style="border: 1px solid #a00000; padding:10px; background: rgba( 255,255,255, 0.5 ); ">    
+    <h4 style="text-align: center;">Demn&auml;chst live</h4>
+	<!--  display date -->
+	<%%WEEKDAY%%> <span class="highlight"><b> <%%DAY%%>. <%%MONTH%%>. <%%YEAR%%> </b> </span> 	<%%TIME%%> Uhr <br>
+	<!--  display time -->
+
+	<!--  display location -->
+	<b> <%%LOCATION%%> </b><br>
+
+	<!--  display address -->
+	<a href="http://maps.google.com?q=<%%GOOGLELINK%%>" onclick="window.open(this.href, '_blank', ''); return false;"> <%%ADDRESS%%> </a><br>
+    <br>
+</div>

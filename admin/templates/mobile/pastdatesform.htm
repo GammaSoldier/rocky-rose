@@ -1,0 +1,24 @@
+<table class="listing" align="center">
+    <tr>
+        <th>
+            <strong> Show past dates </strong>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <strong> <%%NUMPASTDATES%%> </strong> last dates are displayed.
+        </td>
+    </tr>
+
+    <form method="post" action="<%%SITE%%>?action=settings">
+    <tr>
+        <td style="width: auto;">
+            Number of past dates to display: 
+            <select size="1" name="pastdates" style="width: 48px; text-align: right;">
+            <%%PASTDATESSELECTOR%%>
+            <input type="submit" name="btnsend" value="Set" style="height: 20px; width: 100px"/>
+            </select>
+        </td>
+    </tr>
+    </form>
+</table>

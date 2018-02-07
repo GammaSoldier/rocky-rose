@@ -1,0 +1,341 @@
+
+
+@font-face {
+  font-family: 'Gilc';
+  src: url('GILC____.woff');
+}
+
+@font-face {
+  font-family: 'Espk';
+  src: url('espek.woff');
+}
+
+
+body, nav, ul, li, a, table, div{ 
+margin: 0px;
+padding: 0px;
+font-size: 1.0em;
+}
+
+body {
+	color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 220%;
+	Background-Color: #e0e0d0;
+	background-image:url(Grafik/TexturePaper2.jpg);
+    background-repeat: repeat;
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    vertical-align: center;
+    background: url(Grafik/Header.png) scroll no-repeat top center;
+}
+
+body.EMail {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #e0e0d0;
+
+}
+
+a:link {
+	Color: #a00000;
+}
+
+a:visited {
+	Color: #a00000;
+}
+
+a:hover {
+	Color: #a00000;
+}
+
+a img {
+  border: 0 none;
+}
+
+
+img.Large {
+    width: 50%;
+}
+
+
+img.Full {
+    width: 100%;
+}
+
+
+
+.Center {
+	Text-align: center;
+}
+
+.Column {
+	Text-align: justify;
+}
+
+
+.highlight {
+	font-size: 1em;
+	font-weight: bold;
+	color: #a00000;
+}
+
+.name {
+    Font-family: Espk;
+	font-size: 2.2em;
+	color: #000000;
+}
+
+
+h1 {
+    font-family: Gilc;
+/*	Font-Size: 26pt;*/
+	font-size: 2.2em;
+	Font-weight: normal;
+	text-align: center;
+    color: #a00000;
+}
+
+h2 {
+    font-family: Gilc;
+/*	Font-Size: 26pt;*/
+	font-size: 2.2em;
+	Font-weight: normal;
+	text-align: left;
+    color: #a00000;
+}
+
+h3 {
+    font-family: Gilc;
+/*	Font-Size: 20pt;*/
+	font-size: 2.2em;
+	Font-weight: normal;
+	color: #000000;
+}
+
+
+
+table.listing {
+	width: 100%;
+    border: 2px solid #a00000;
+	border-spacing: 1px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 1.0em;
+}
+
+tr.odd {
+    border: #222 1px solid;
+}
+
+tr.even {
+	background-color: #ffffff;
+}
+
+
+
+
+td {
+	Font-Family: Veranda, Sans-Serif;
+   	vertical-align: top;
+    padding: 25px;
+}
+
+
+
+td.Title {
+	text-align: center;
+}
+
+td.ContentLeft {
+    vertical-align: top;
+}
+
+td.ContentRight {
+    vertical-align: top;
+}
+
+
+td.Head {
+	text-align: center;
+	border: none;
+	margin: 0px;
+}
+
+td.Menu {
+	text-align: center;
+	word-spacing: 20px;
+	border-style: none;
+/*	Background-Color: #000000;*/
+}
+
+td.Future {
+	color: #a00000;
+}
+
+
+
+textarea {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.2em;
+	background-color: #ffffff;
+}
+
+input, select, button {
+
+	font-family: helvetica, arial, sans-serif;
+	font-size: 2.0em;
+
+    background: #fff;
+}
+
+select, input[type=checkbox] {
+	min-width: 1.5em;
+	min-height: 1.5em;
+	font-size: 2.0em;
+  /* All browsers except webkit
+  transform: scale(5.0);*/
+
+  /* Webkit browsers
+  -webkit-transform: scale(5.0);*/
+}
+
+
+
+/************************************************************************
+ Navigation
+************************************************************************/
+
+
+
+.toggleMenu {
+ 	font-size: 2em;
+    Font-family: Gilc;
+    display: none;
+	text-decoration: none outside none;
+    color: #000;
+}
+
+.nav {
+    list-style: none;
+/*     *zoom: 1;*/
+}
+
+
+.nav:before,
+.nav:after {
+ /*   content: " "; */
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+
+
+.nav ul {
+    list-style: none;
+/*    width: 9em;*/
+}
+.nav a {
+ 	font-size: 1.2em;
+    padding: 0px 10px;
+    color:#000;
+}
+
+.nav a:hover {
+    color:#a00000;
+}
+
+
+.nav li {
+    position: relative;
+}
+.nav > li {
+ 	padding: 0px;
+	vertical-align: middle;
+	display: inline;
+}
+
+.nav > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    Font-family: Espk;
+ 	display: inline-block; 
+	text-decoration: none;
+   	font-size: 3.5em;
+
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid;
+}
+.nav li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid;
+}
+
+
+
+@media screen and (max-width: 2000px) {
+    .active {
+        display: block;
+    }
+    .nav > li {
+        display: block; 
+        background-color: #a00000;
+        background-image: url("Grafik/SeperatorWhite.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        padding: 0px;
+        margin: 0px;
+   }
+
+    .nav a {
+        font-size: 2em;
+        padding: 0px;
+        color:#fff;
+    }
+     .nav a:hover {
+        color:#000;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        padding: 20px;
+        margin: 0px;
+    }
+
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+

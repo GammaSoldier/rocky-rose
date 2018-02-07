@@ -1,0 +1,30 @@
+<span style="color: #ff0000; font-weight: bold; font-size: 2em;">WARNING!</span><br/>
+<br/>
+Are you sure you want to delete this date? <br/>
+<br/>
+<%%DATE%%><br/>
+<%%NAME%%> <%%ADDRESS%%><br/>
+<br/>
+
+<form method="post" action="<%%SITE%%>?action=deldate">
+<table>
+    <tr>
+
+        <td>
+            <input type="hidden" name="dateid" value="<%%REQUEST_DATE%%>" />
+            <input type="submit" name="btnsend" value="Keep" style="height: 20px; width: 100px"/>
+        </td>
+        <td>
+            <input type="submit" name="btnsend" value="Delete" style="height: 20px; width: 100px"/>
+        </td>
+        <td>
+            <input type="submit" name="btnsend" value="Cancel" disabled style="height: 20px; width: 100px"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Don't delete date</td>
+        <td>Delete date</td>
+        <td>Delete date and inform users (not yet implemented)</td>
+    </tr>
+
+</form>

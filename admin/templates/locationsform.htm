@@ -1,0 +1,42 @@
+<table class="listing" align="center">
+    <tr>
+        <th colspan="2">
+            <strong> <%%TITLE%%> </strong>
+        </th>
+    </tr>
+
+    <form method="post" action="<%%SITE%%>?action=<%%ACTION%%>">
+    <tr>
+        <td width="80em">
+            <b>Name:</b>
+        </td>
+        <td>
+        <input type="text" name="locationname" value="<%%NAME%%>" maxlength="255" style="width: 100%;"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Address:</b>
+        </td>
+        <td><input type="text" name="locationaddress"  value="<%%ADDRESS%%>" maxlength="255" style="width: 100%;"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Remarks:</b>
+        </td>
+        <td><textarea name="locationremarks" rows="3" style="width: 100%;"><%%REMARKS%%></textarea>
+        </td>
+    </tr>
+    <input type="hidden" name="locationid" value="<%%ID%%>" />
+    <tr>
+        <td>
+        </td>
+        <td><input type="submit" name="btnsend" value="Submit" style="width: 100px;"/>
+            <%%BUTTONDELETE%%>
+        </td>
+    </tr>
+			
+    </form>
+
+</table>	

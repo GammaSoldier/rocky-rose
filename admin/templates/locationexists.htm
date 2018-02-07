@@ -1,0 +1,26 @@
+<span style="color: #ff0000; font-weight: bold;">Location name already exists as:</span> <br/>
+<br/>
+<%%NAME%%> <br/>
+<%%ADDRESS%%> <br/>
+<%%REMARKS%%> <br/>
+<br/>
+<br/>
+<br/>
+You entered<br/>
+<br/>
+<%%NAME_NEW%%> <br/>
+<%%ADDRESS_NEW%%> <br/>
+<%%REMARKS_NEW%%> <br/>
+<br/>
+<br/>
+<br/>
+
+Add location anyway?<br/>
+<br/>
+<form method="post" action="<%%SITE%%>?action=confirmnewlocation">
+<input type="hidden" name="locationname" value="<%%NAME_NEW%%>" />
+<input type="hidden" name="locationaddress" value="<%%ADDRESS_NEW%%>" />
+<input type="hidden" name="locationremarks" value="<%%REMARKS_NEW%%>" />
+<input type="submit" name="btnsend" value="Yes" style="height: 20px; width: 100px"/>&nbsp;
+<input type="submit" name="btnsend" value="No" style="height: 20px; width: 100px"/>
+</form>
